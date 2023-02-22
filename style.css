@@ -1,0 +1,1496 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+.box{
+ display: flex;
+ flex-direction: column;
+ margin: 0 auto;
+ overflow: hidden;
+ background-color:#fdfdfe;   
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.faq .question-active~p{
+    display: block;
+}
+.faq main li p{
+    display: none;
+}
+@media(min-width:320px){
+    html{
+        font-size: 20px;
+    }
+  
+    section, footer{
+        padding: 1rem 2rem;
+    }
+    footer{
+        background-color:#09142e;
+    }
+    header{
+        width: 100%;
+        padding: 1rem 2rem;
+        background-image: url(src/Header.png);
+        background-size: cover;
+        background-position: 30%;
+        padding-bottom: 2.5rem;
+        height: 100vh;
+    }
+    ul li{
+      padding: .5rem 0;
+      font-size: .7rem;
+      list-style: none;
+  }
+    nav{
+        width: 100%;
+        display: flex;
+        position: relative;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        padding: .5rem 0;
+        left: 15%;
+        top: -100%;
+        transition: .5s linear;
+        z-index: 1;
+        position: fixed;
+        z-index: 1;
+        background-color:#fdfdfe;   
+    }
+    .menu-active{
+        top: 0;
+        transition: .5s linear;
+    }
+    .navigate{
+        height: 100%;
+        font-size: 1rem;
+    }
+    .navigate li{
+        display: flex;
+        padding: .5rem 0;
+        justify-content: center;
+        font-family: 'Courier New Bold', arial;
+    }
+    button{
+        font-size: .6rem;
+        padding: .5rem 1rem;
+        border-radius: 4rem;
+        font-weight: bold;
+        background-color:#2500f9;
+        color: white;
+    }
+    .main-paragraph{
+        display: flex;
+        border-radius: 1rem;
+        background-color:#e2eaed;
+        overflow: hidden;
+    }
+    .main-paragraph p{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: .14rem .5rem;
+        font-size: .7rem;
+    }
+    .main-paragraph img{
+        left: 0;
+        top: 0;
+        border-radius: 4rem;
+        width: 1.5rem;
+    }
+    .main-text{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main-text h1{
+        justify-self: flex-start;
+        margin: 1rem 0;
+        font-size: 1.5rem;
+    }
+    header main{
+        margin: 3rem 0;
+    }
+    .main-nav{ 
+        display: flex;
+    }
+    .main-nav button{
+        margin: 2rem 0;
+    }
+    .main-nav p{
+        font-size: .7rem;
+        color: #2500f9;
+        align-self: center;
+        margin-left: .8rem;
+        display: block;
+        font-weight: bold;
+    }
+    .logo-app{
+        display: flex;
+        font-family: Arial;
+        font-size: .8rem;
+        margin: 1rem 0;
+    }
+    .first-part-logo{
+        color: #fcae61;
+    }
+    .hamburger-menu{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        background-color: transparent;
+        margin: 1rem 1rem;
+        right: 0;
+        height: 1.4rem;
+        width: 1.5rem;
+        justify-content: space-between;
+        z-index: 2;
+
+
+
+
+    }
+    .hamurger-part{
+        display: block;
+        position: relative;
+        border-radius: 4rem;
+        width: 100%;
+        flex-basis: 25%;
+        background-color:black;
+        transform-origin: 0;
+        transition: .3s;
+    }
+    .hamburger-menu-active .hamurger-part:nth-child(1){
+        transform: rotate(45deg);
+        flex-basis: 20%;
+
+    }
+    .hamburger-menu-active .hamurger-part:nth-child(3){
+        transform: rotate(-45deg);
+        flex-basis: 20%;
+
+    }
+    .hamburger-menu-active .hamurger-part:nth-child(2){
+        background-color:transparent;
+    }
+
+
+    .phone-img{
+        display: none;
+    }
+    .trusted-companies{
+        padding: 1rem 2rem;
+
+    }
+    .trusted-companies p{
+        text-align: center;
+        padding: 1rem 0;
+        font-weight: bold;
+        font-size: .8rem;
+    }
+    .trusted-companies ul{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .trusted-companies ul li{
+        display: flex;
+        justify-content: center;
+        padding: .7rem 0;
+        width: 80%;
+        height: 5rem;
+    }
+    .trusted-companies ul li{
+        align-items: flex-start;
+    }
+    .features{
+        padding: 1rem 2rem;
+    }
+
+    .section-header h2{
+        text-align: center;
+        padding: 1rem 0;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    .features h2{
+        padding-bottom: .5rem;
+    }
+    .section-header p{
+        font-size: .7rem;
+        padding: 0 .5rem;
+    }
+    .features-description{
+        margin:1rem 0;
+    }
+    .description{
+        display: flex;
+        padding: .7rem 0;
+        align-items: flex-start;
+        
+    }
+    .description img{
+        align-self: center;
+        margin-right: .5rem;
+
+    }
+    .description-text{
+        margin-left: .5rem;
+    }
+    .description-text p{
+        font-size: .8rem;
+    }
+    .designed-img{
+        display: none;
+    }
+    .designed-beauty-header h2{
+        padding-bottom: 1rem;
+    }
+    .designed-beauty-header p{
+        margin: 1rem 0;
+        padding-left: 0;
+        
+    }
+    .img-phone{
+        display: none;
+    }
+    .pricing-header{
+        display: flex;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+
+    }
+    .pricing-header p{
+        align-self: flex-end;
+        font-weight: bold;
+        color: #a5a8b0;
+        font-weight: 100;
+        margin-left: 0;
+        padding: 0;
+    }
+    .pricing-header h1{
+        font-size: 1.3rem;
+        font-weight: lighter;
+    }
+    .payment-header nav {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0;
+        border-radius: 4rem;
+        padding: 0;
+        display: flex;
+    }
+    .payment-header nav p{
+        font-size: .6rem;
+        padding: .5rem 1rem;
+        color: black;
+        border-radius: 4rem;
+    }
+    .pricing-description ul{
+        width: 100%;
+        list-style: none;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1rem 0;
+    }
+
+    .pricing-description h4{
+        text-align: center;
+    }
+    .pricing-description p{
+        color: #a5a8b0;
+        text-align: center;
+        font-size: .6rem;
+
+    }
+    .pricing-description ul li p{
+        font-size: .7rem;
+        font-weight: bold;
+        color: #a5a8b0;
+
+    }
+
+    .Testimonila-img{
+        display: none;
+    }
+    
+    .testimonila-main h2{
+        text-align: center;
+        padding: 1rem 0;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    .testimonila-main p{
+        font-size: .7rem;
+        margin: 1rem 0;
+    }
+    .testimonila-main img{
+        margin: .5rem 0;
+        margin-top: .1rem;
+        width: 5rem;
+    }
+    .testimonila-main h4{
+        font-size: .8rem;
+        text-align: left;
+    }
+    .emploee{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        
+    }
+    .emploee img{
+        width: 3rem;
+        display: block;
+        margin: 0;
+        margin-right: .6rem;
+    }
+    .emploee-description {
+        margin-left:  .6rem;
+
+    }
+    .emploee-description p{
+        margin: .2rem;
+        font-size: .6rem;
+        justify-self: center;
+    }
+    .faq main ul {
+        list-style: none;
+        }
+    .asked-questions-li-header{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        position: relative;
+    }
+    .asked-questions-li-header h4{
+        width: 90%
+    }
+    .asked-questions-li-header .plus{
+        width: 10%;
+        
+    }
+    
+    .plus{
+        font-size: 1.2rem;
+        font-weight: bold;
+        width: 20%;
+        text-align: center;
+        right: 0;
+        display: block;
+        height: 1.6rem;
+    }
+    .plus::before{
+        content: "+";
+    }
+    .plus-active::before{
+        content: "-";
+    }
+    .plus:hover{
+        cursor: pointer;
+    }
+    .asked-questions-li-header{
+        margin: 1rem 0;
+    }
+    .faq li p{
+        font-size: .7rem;
+    }
+    .buttons{
+        display: flex;
+        justify-content: center;
+    }
+    .buttons button{
+        padding: 0;
+        color: transparent;
+        border: unset;
+        background-color: transparent;
+    }
+    .buttons img{
+        width: 15rem;
+        display: block;
+        margin: .5rem;
+    }
+    .download-app img{
+        display: none;
+    }
+    .buttons img{
+        width: 5rem;
+        display: block;
+        margin: .5rem;
+    }
+    footer ul {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer ul  li{
+        text-align: center;
+        width: 100%;
+        color:#ffffff;
+        font-weight: bold;
+    }
+    footer .logo-app{
+        text-align: center;
+        justify-content: center;
+    }
+    footer .logo-app .two-logo{
+        color: #ffffff;
+    }
+    .social-media li i{
+        font-weight: lighter;
+        font-size: 1rem;
+        opacity: .1;
+    }
+    .social-media .slack{
+        opacity: 1;
+    }
+    .footer-paragraph{
+        margin: 1rem 0;
+        color: #ffffff;
+        font-size: .4rem;
+        font-weight: lighter;
+        text-align: center;
+    }
+    .features-phone-img{
+        display: none;
+    }
+}
+    @media(min-width:360px){
+      
+        .description img{
+            width: 3rem;
+        }
+        .choose-app .description img, .ultimate-features .description img{
+            width: 2rem;
+        }
+       
+    }
+
+    @media(min-width:411px){
+        .main-text{
+            margin: 0 .5rem;
+            margin-top: 3.5rem;
+        }
+    }
+    @media(min-width:567px){
+        html{
+            font-size: 17px;
+        }
+        header, section{
+            margin: 1rem;
+        }
+        .main-text{
+            margin-top: 0;
+            width: 70%;
+        }
+        header main{
+            margin-top: .1rem;
+            margin-left: 1rem;
+        }
+        .main-nav{
+            margin-top: .1px;
+        }
+        .menu{
+            width: unset;
+            padding: 1rem 2.5rem;
+            padding-left: 1rem;
+            left: unset;
+            right: 0;
+            border-left: 1px solid black;
+            border-bottom: 1px solid black;
+
+        }
+        .trusted-companies ul{
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .trusted-companies ul li{
+            width: 20%;
+            align-items: center;
+        }
+        .trusted-companies ul li img{
+            width: 4rem;
+        }
+        .features .description, .Smart-jackpot .description, .ultimate-features .description{
+            width: 80%;
+        }
+        .choose-app-description .description{
+           padding: 1rem .5rem; 
+        }
+        .features .description p, .Smart-jackpot .description p, .ultimate-features .description p{
+            font-size: .7rem;
+            margin-top: .2rem;
+        }
+        .features-header{
+            text-align: center;
+        }
+        .main-paragraph p{
+            font-size: .6rem;
+            padding: 0;
+            
+        }
+
+        .main-paragraph {
+            justify-self: flex-start;
+            display: flex;
+        }
+        .choose-app-description{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .choose-app .description{
+            width: 50%;
+        }
+        .choose-app .description p{
+            font-size: .6rem;
+        }
+        .choose-app .description img{
+            width: 1.5rem;
+        }
+        
+        .pricing-annually-month{
+            display: flex;
+
+        }
+        .pricing{
+            width: 50%;
+        }
+        .payment-header p{
+            text-align: center;
+        }
+        .payment-header h2{
+            padding: .1rem;
+        }
+        .payment-header nav{
+            margin: 1.5rem 0;
+        }
+        .asked-questions-li-header h4{
+            width: 95%;
+        }
+        .asked-questions-li-header h4.plus{
+            width: 5%;
+        }
+        .testimonila{
+            padding: 2rem;
+        }
+        .faq{
+            padding: 0 5rem;
+        }
+        .faq li {
+            padding: 0;
+        }
+        .faq li p{
+            display: none;
+        }
+        .download-app{
+            padding: 1rem 2rem;
+        }
+        .download-app-header{
+            padding: 0 2rem;
+        }
+        .download-app-header p{
+            padding: 0 2rem;
+            margin-bottom: 1rem;
+            
+        }
+
+
+
+    }
+ 
+@media(min-width:730px){
+    html{
+        font-size: 17px;
+    }
+    header{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        padding: 0;
+    }
+    header nav{
+        width: 100%;
+        position: fixed;
+        display: flex;
+        padding-left: 2rem;
+        left: 0;
+        background-color: #fff;
+        top: 0;
+        z-index: 1;
+        border-bottom: .1rem solid black;
+    }
+    header main{
+        display: flex;
+        margin-top: 4rem;
+        height: 90%;
+        padding: 0 1rem;
+    }
+    header .main-text{
+        flex-direction: row;           
+        margin-top: 3rem;
+        padding: 0;
+        width: 55%;
+        padding: 0 2rem;
+    }
+    .phone-img {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        flex-grow: 1;
+        height: 100%;
+    }
+    .phone-img img{
+        display: block;
+        position: absolute;
+        width: 10rem;
+        justify-content: center;
+    }
+    .hamburger-menu{
+       display: none;
+    }
+    .menu{
+        position: relative;
+        padding: 0;
+        left: unset;
+        right: 0;
+        border:none;
+        flex-grow: 1;
+        align-items: flex-end;
+    }
+    .navigate{
+      display: flex;
+      height: 100%;
+      width: unset;
+      padding-right: 1rem;
+      height: 100%;
+      width: unset;
+      flex-grow: 0;
+    }
+    .navigate li{
+        align-items: center;
+        }
+        .navigate li p{
+            margin: 0 .3rem;
+            
+        }
+    .navigate li button{
+        font-size: .5rem;
+        padding: .5rem .6rem;
+        margin-left: .5rem;
+    }
+    .logo-app{
+        width: unset;
+        flex-grow: 0;
+        align-self: center;
+    }
+    .features{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .features-phone-img{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .features-phone-img img{
+        display: block;
+        width: 15rem;        
+
+    }
+    .features-text h2{
+        padding-top: 0;
+    }
+    .features-description {
+        width: 100%;
+    }
+
+    .features .description p{
+        font-size: .8rem;
+    }
+    .features-description .description{
+       width: 100%;
+    }
+    .features-text{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 40%;
+        
+    }
+    .jackpots-header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 3rem;
+
+    }
+    .jackpots-header h2{
+        padding-right:  2rem;
+    }
+    .jackpots-header p{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .jackpots-description{
+        display: flex;
+        flex-direction:row;
+        width: 100%;
+        position: relative;
+        align-items: center;
+        margin-top: 2.5rem;
+        padding: 0 2rem;
+    }
+    
+
+    .jackpots-description .description{
+        width: 33%;
+        padding:0 .5rem;
+        }
+        .jackpots-description .description p{
+            font-size: .5rem;
+            padding-right: 1.5rem;
+            }
+            .jackpots-description .description img{
+                width: 2.3rem;
+            }
+            .jackpots-description .description h5{
+                font-size: .7rem;
+            }
+        .designed-img, .ultimate-features .img-phone, .Testimonila-img, .download-app-img{
+            display: block;
+        }
+      
+        .designed-img img{
+           width: 22rem;       
+        }
+        .designed-beauty .description p{
+            font-size: .8rem;
+        }
+        .features-description .description{
+           width: 100%;
+        }
+        .designed-beauty-header .main-text{
+            display: block;
+            width: 30%;
+            margin-left: 2rem;
+            padding-top: 1.8rem;
+        }
+        .designed-beauty-header .main-text h2{
+            text-align: left;
+            font-size: 1.2rem;
+            padding-bottom: 0;
+        }
+        .designed-beauty-header, .ultimate-features, .testimonila, .download-app
+            {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        .choose-app-header p, .ultimate-features-header p{
+            text-align: center;
+            width: 62%;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+
+        }
+        .choose-app-description {
+            justify-content: center;
+            margin-top: 2rem;
+            width: 90%;
+            left: 50%;
+            position: relative;
+            transform: translateX(-50%);
+        }
+
+        .choose-app .description {
+          width: 33.3%;
+          padding:  1.5rem 1rem;
+        }
+        .choose-app .description  img{
+            width: 2.5rem;
+        }
+        .ultimate-features{
+            padding-left:  3rem;
+        }
+
+        .ultimate-features-header h2{
+            width: 90%;
+            font-size: 1.2rem;
+            padding-bottom: .5rem;
+        }
+       
+        .ultimate-features-header{
+            padding-left: 0;
+            width: 50%;
+            margin-bottom: 2rem;
+        }
+        .ultimate-features-header h2, .ultimate-features-header p, .testimonila-main h2,.download-app-header h2,.download-app-header p 
+        {
+            padding-top: 0;
+            padding-left: 0;
+            text-align: left;
+        }
+        .ultimate-features-header p{
+            left: 0;
+            transform: translateX(0);
+            width: 100%;
+        }
+        .ultimate-features .img-phone{
+            padding-top: 4rem;
+        }
+        .ultimate-features-description{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .ultimate-features .description{
+            width: 50%;
+            padding:.5rem;
+        }
+        .img-phone img{
+            width: 15rem;       
+         }
+         .pricing-annually-month{
+             justify-content: center;
+             padding: 0 7rem;
+         }
+         .pricing{
+             width: 40%;
+         }
+         .Testimonila-img img{
+            width: 22rem;
+            
+        }
+        .testimonila-main, .download-app-header{
+            width: 100%;
+        }
+        .testimonila-main h2{
+            padding-bottom: 0;
+            width: 80%;
+            
+        }
+        .Testimonila-img{
+            padding-top: 2rem;
+        }
+        .faq{
+            padding: 0 4rem;
+        }
+        .faq-header, .faq main{
+            margin-left: 6rem;
+            margin-right: 6rem;
+            padding-bottom: 2rem;
+        }
+        .faq-header, .faq main p{
+            text-align: center;
+        }
+        .faq main li p{
+            text-align: left;
+            padding-right: .5rem;
+        }
+        .download-app{
+            margin: 0;
+        }
+        .download-app-header{
+            width: 60%;
+            flex-grow: 0;
+            z-index: 1;
+            padding: 0 2rem;
+            
+        }
+
+        .download-app .download-app-img img{
+            width: 20rem;
+            display: block;
+            position: absolute;
+            top:-.5rem;
+            left: 50%;
+        }
+        .download-app-header .buttons{
+            justify-content: flex-start;
+            margin-top: 1.5rem;
+        }
+        .download-app-header .buttons button{
+            border-radius: 0;
+            margin-right: 1rem;
+
+
+        }
+        .download-app-header .buttons button img{
+            width: 6rem;
+            margin-left: 0;
+        }
+        .download-app-first-button-img{
+           margin-left: 0;
+        }
+        .download-app-header h2{
+            font-size: 1.5rem;
+        }
+        .download-app-header p{
+            font-size: .6rem;
+        }
+        .download-app{
+            padding-bottom: 0;
+            position: relative;
+
+        }
+
+        footer{
+            display: block;
+        }
+        footer ul{
+            font-family: 'Courier New Bold', arial;
+            flex-direction: row;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 1.5rem;
+        }
+        .footer-navigate{
+            margin-bottom: 1rem;
+        }
+        footer ul li{
+            width: unset;
+            padding: .5rem;
+            font-size: .5rem;
+}
+        footer .footer-paragraph
+        {
+            text-align: center;
+            align-self: center;
+            
+        }   
+        section h2, header{
+            font-family: 'Courier New Bold', arial;
+        }
+        
+}
+
+@media(min-width:760px) and (orientation:portrait){
+    html{
+        font-size:  20px;
+    }
+    button{
+        font-size: .8rem;
+        padding: .5rem 1rem;
+    }
+    header{
+    margin-left: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    }
+    header nav{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border: none;
+    }
+    header main{
+        margin-top: 6rem;
+    }
+    .main-paragraph {
+        width: 12rem;
+    }
+    .main-paragraph p{
+        font-size: .61rem;
+    }
+    .main-text{
+        display: block;
+    
+    }
+    header main .main-text{
+        padding: 0;
+        padding-top: 5rem;
+        
+    }
+    header main .main-text h1{
+        font-size: 1.7rem;
+        margin-top: 1rem;
+    }
+    .main-nav button, .main-nav p{
+        padding: .8rem 1.4rem;
+        font-size: .8rem;
+    }
+    .phone-img {
+        margin-top: 3rem;
+    }
+    .phone-img img{
+        width: 14rem;
+    }
+    .jackpots-header{
+        padding: 0 1rem;
+    }
+    .jackpots-description{
+        padding: 0 .5rem;
+    }
+    .jackpots-description  .description{
+        padding: 0;
+    }
+    .jackpots-description  .description p{
+        padding-right: 0;
+        font-size: .6rem;
+    }
+    .navigate li{
+        font-size: .8rem;
+    }
+    .navigate li button{
+        font-size: .65rem;
+    }
+    .ultimate-features-header{
+        width: 80%;
+        padding-right: 3.5rem;
+    } 
+    .ultimate-features{
+        padding-right: 0;
+    }      
+    .ultimate-features main{
+        flex-grow: 0;
+    }
+    .ultimate-features-header {
+        padding-right: 0;
+        
+    }
+        .ultimate-features-header h2{
+            font-size: 1.4rem;
+
+        }
+        .ultimate-features-header p{
+            font-size: .9rem;
+            width: 100%;
+        }
+      
+        .ultimate-features .img-phone img{
+            width: 17rem;
+            margin-top: 5rem;
+        }
+        .ultimate-features main .description, .choose-app-description .description{
+            flex-direction: column;
+        }
+
+        .ultimate-features main .description img{
+            align-self: flex-start;
+            margin: .5rem;
+            width: 3rem;
+            margin-bottom: 1rem;
+        }
+        .pricing-annually-month{
+            padding: 0 1rem;
+        }
+        .designed-beauty{
+            padding-right: 0;
+        }
+        .designed-beauty .main-text{
+            margin: 0;
+        }
+        .choose-app-description .description img{
+            width: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .ultimate-features main .description h5, .choose-app-description .description h5 {
+            margin-bottom: .5rem;
+        }
+        .ultimate-features main button{
+           margin-top: 1rem;
+           padding: .5rem 1.5rem;
+        }
+        .faq{
+            padding: 0 ;
+        }
+}
+    @media (min-width: 930px){
+        html{
+        font-size:1124px;
+        }
+        header nav{
+            padding-left: 5rem;
+            padding-right: 3rem;
+        }
+        header main{
+            margin-top: 5rem;
+        }
+        .phone-img img{
+            width:15rem;
+        }
+        .main-paragraph {
+            width: 12rem;
+        }
+    
+        header main{
+            margin-right: 7rem;
+            margin-left: 5rem;
+        }
+        header .main-text{
+            margin-top: 6rem;
+            margin-right: 2rem;
+            padding: 0;
+        }
+        header .main-text h1{
+            font-size: 1.8rem;
+        }
+        header .main-text p{
+            font-size: .6rem;
+            padding-right: 5rem;
+        }
+        header .main-text .main-paragraph p{
+            font-size: .6rem;
+            padding-right: 0;
+
+        }
+        header .main-text .main-nav p{
+            font-size: .6rem;
+            padding-right: 0;
+        }
+        .jackpots-description .description img{
+            width: 3rem;
+        }
+        .jackpots-description .description p{
+            font-size: .6rem;
+        }
+        .jackpots-header h2, .jackpots-header p{
+            padding:  0 4rem;
+        }
+        .designed-beauty img{
+            width: 25rem;
+        }
+        .designed-beauty .main-text{
+            padding-top: 6rem;
+        }
+        .designed-beauty .main-text h2{
+            padding-right: 3rem;
+            padding-top: 0;
+        }
+        .ultimate-features{
+            padding-left:  7rem;
+        }
+        .ultimate-features h2{
+            font-size: 1.3rem;
+        }
+        .pricing-annually-month{
+            padding: 0 7rem;
+        }
+        .testimonila-main{
+            padding: 0 2rem;
+        }
+        .testimonila{
+            padding-right: 6rem;
+        }
+        button{
+        font-size: .5rem;
+        }
+        .faq{
+            padding: 0 6rem;
+        }
+        .download-app{
+            padding-top: 1rem;
+            padding-right: 5rem;
+            padding-left: 5rem;
+        } 
+    
+    
+    }
+@media only screen and (min-device-width: 1000px) and (-webkit-min-device-pixel-ratio: 2) {
+    html{
+      font-size:22px;
+    }
+    header main{
+        margin-top: 5rem;
+    }
+    .jackpots-description .description img{
+        width: 3rem;
+    }
+    .main-text{
+        display: block;
+    
+    }
+    .jackpots-description .description {
+      padding: 0;
+    }
+    .jackpots-description .description p{
+        font-size: .7rem;
+        padding-right: 0;
+    }
+   
+}
+
+
+
+
+@media only screen and (min-device-width: 1000px) and (-webkit-min-device-pixel-ratio: 2) and (orientation:portrait) {
+    html{
+        font-size: 25px;
+    }
+    header main{
+          margin-top: 5rem;
+          margin-right: 2rem;
+          margin-left: 2rem;
+      }
+      .phone-img img{
+          width:17rem;
+      }
+      header .main-text{
+          margin-top: 6rem;
+      }
+      .designed-beauty{
+          padding: 1rem 0;
+      }
+      .designed-beauty .main-text{
+          width: 50%;
+          padding-top: 4rem;
+      }
+
+      .jackpots-description .description img{
+        width: 7rem;
+    }
+    
+    .jackpots-description .description p{
+        font-size: .6rem;
+    }
+    .jackpots-header h2, .jackpots-header p{
+        padding:  0 2rem;
+    }
+    .ultimate-features{
+        padding-left: 4rem;
+    }
+    .ultimate-features-header h2{
+        font-size: 1.5rem;
+    }
+    .testimonila{
+        padding-right: 2rem;
+    }
+    .testimonila-main{
+        padding: 0;
+    }
+      .pricing-annually-month{
+          padding: 0 5rem;
+      }
+      button{
+        font-size: .5rem;
+      }
+      header nav{
+          padding-top: 1rem;
+          padding-bottom: 0;
+      }
+      .faq{
+          padding: 0 3rem;
+      }
+      .download-app{
+          padding-top: 1rem;
+          padding-right: 3rem;
+          padding-left: 3rem;
+      }
+}
+@media(min-width:1200px){
+    html{
+      font-size:25px;
+    }
+    header main{
+        margin-top: 5rem;
+    }
+    .main-text{
+        display: block;
+    
+    }
+}
+@media only screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) {
+html{
+      font-size:32px;
+    }
+    header main{
+        margin-top: 7rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    header main .phone-img img{
+        width: 12rem;
+    }
+    .download-app{
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+    .jackpots-description{
+        padding: 0 1rem;
+    }
+    .jackpots-description .description img{
+        width: 4rem;
+    }
+    .jackpots-description .description p{
+        padding: 0;
+        padding-right: .5rem;
+        font-size: .6rem;
+    }
+    .jackpots-description .description img{
+        width: 8rem;
+    }
+    .Smart-jackpot h2, .Smart-jackpot p{
+        padding: 0 1.5rem;
+        text-align: left;
+    }
+    .features .features-text .description img{
+        width: 8rem;
+    }
+    .features .features-text .description{
+        padding: 1rem .5rem;
+    }
+    .designed-beauty .main-text h2{
+        padding-right: 0;
+    }
+    .choose-app-description .description{
+        padding: 1rem .5rem;
+    }
+    .designed-beauty{
+        padding-right: 0;
+    }
+    .designed-beauty .main-text{
+        margin: 0;
+    }
+    .choose-app-description .description img{
+        width: 6rem;
+    }
+    .choose-app-description .description .description-text h5,     .ultimate-features-description .description-text h5
+        {
+        margin-bottom: .3rem;
+    }
+    .ultimate-features{
+        padding: 1rem 2rem;
+        padding-right: 0;
+
+    }
+    .ultimate-features-description{
+      margin-bottom: 2rem;
+        
+    }
+    .ultimate-features-description .description img{
+        width: 2.5rem;
+        margin: 1rem;
+        
+    }
+    .ultimate-features-description .description{
+        flex-wrap: wrap;
+        flex-direction: row;
+        display: flex;
+        padding: 0;
+    }
+    .ultimate-features-description .description-text{
+        padding-right: .5rem;
+    }
+    .ultimate-features-description .description-text p{
+        font-size: .8rem;
+    }
+    .ultimate-features .img-phone img{
+        display: block;
+        position: relative;
+        top: 4rem;
+        width: 17rem;
+ }
+ .ultimate-features-header p{
+    font-size: .8rem;
+    padding-right: 0;
+ }
+ .ultimate-features-header{
+    width: 60%;
+}
+ button, .payment-header nav p{
+     padding: .6rem 1.5rem;
+     font-size: .7rem;
+ }
+ .testimonila{
+    padding: 0;
+    padding-right: 1rem;
+ }
+ .faq{
+     padding: 0 3rem;
+ }
+
+}
+
+@media(min-width:1400px){
+    html{
+      font-size:28px;
+    }
+    header main{
+        margin-top: 3rem;
+        margin-right: 0rem;
+    }
+    header main{
+        margin-right: 3rem;
+        margin-left: 3rem;
+    }
+    header main .main-text{
+        padding-right: 11rem;
+        margin-top: 6.5rem;
+    }
+   
+    .features-phone-img{
+        margin-right: 2rem;   
+     }
+    .features-phone-img img{
+        
+        width: 18rem;
+    }
+  
+    .features-text{
+        display: flex;
+        flex-direction: column;
+    }
+    .features-description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .features-description .description{
+        width: 60%;
+    }
+    .jackpots-description{
+        padding: 0 6rem;
+    }
+  
+    .jackpots-description .description h5{
+        font-size: .8rem;
+    }
+
+    .jackpots-description .description p{
+        font-size: .7rem;
+    }
+    .jackpots-description .description img
+{
+    width: 7rem;
+}
+.designed-img img{
+    width: 32rem;
+}
+.choose-app{
+    padding: 0 12rem;
+}
+.designed-beauty-header .main-text{
+    padding-right: 2rem;
+}
+.choose-app-description .description{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.choose-app-description .description img{
+    width: 2rem;
+}
+.choose-app-description .description h5{
+    margin: 1rem 0
+}
+.ultimate-features .img-phone img{
+    margin-right: 5rem;
+}
+.ultimate-features .img-phone img{
+    width: 20rem;
+}   
+}
+
